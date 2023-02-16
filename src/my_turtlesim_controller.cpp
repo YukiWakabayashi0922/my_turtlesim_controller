@@ -26,7 +26,7 @@ void MyTurtlesimController::turn()
 void MyTurtlesimController::process()
 {
     ros::Rate loop_rate(hz_);
-    while(ros::ok)
+    while(ros::ok())
     {
         straight();
 
