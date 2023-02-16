@@ -1,4 +1,4 @@
-#include "my_turtlesim_controller/my_turtle_control.h"
+#include "my_turtlesim_controller/my_turtlesim_controller.h"
 
 MyTurtlesimController::MyTurtlesimController():private_nh_("~"), nh_("")
 {
@@ -39,7 +39,7 @@ void MyTurtlesimController::process()
 
 int main(int argc, char** argv)
 {
-    ros::init(argc, argv, "my_tuetlesim_controller");
+    ros::init(argc, argv, "my_turtlesim_controller");
     MyTurtlesimController kame;
     kame.process();
     return 0;
